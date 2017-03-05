@@ -1,0 +1,12 @@
+# Startup apps
+nitrogen --restore &
+volumeicon &
+compton --config ~/.config/compton.conf -b &
+tint2 &
+plank &
+conky -c ~/.config/conky.conf &
+lxpolkit &
+nm-applet &
+
+# Turn off screen going dark after 10 mins
+xset -dpms s off

@@ -1,0 +1,22 @@
+nitrogen --set-auto --random &
+#volumeicon &
+volti &
+compton &
+#compton --config ~/.config/compton.conf -b &
+tint2 &
+tint2 -c /home/scosh/.config/tint2/clock/clock.tint2rc &
+#plank &
+#conky -c ~/.config/conky.conf &
+lxpolkit &
+dropbox &
+numlockx &
+docky &
+
+# set caps-lock as the compose key to type umlauts and such
+setxkbmap -option compose:caps
+
+# turn off system error beep
+xset -b 
+
+# turn off screen going dark after 10 mins
+xset -dpms s off
