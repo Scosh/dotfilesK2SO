@@ -1,3 +1,6 @@
+# APPS
+# ----
+
 nitrogen --set-auto --random &
 #volumeicon &
 volti &
@@ -12,8 +15,17 @@ dropbox &
 numlockx &
 docky &
 
+# KEYBOARD
+# --------
+
 # set caps-lock as the compose key to type umlauts and such
 setxkbmap -option compose:caps
+
+# change the $ key on my US Layout to a Euro-Moneydollars key
+xmodmap -e "keycode  13 = 4 EuroSign 4 EuroSign"
+
+# SYSTEM / SCREEN
+# ---------------
 
 # turn off system error beep
 xset -b 
