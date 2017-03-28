@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
@@ -266,10 +265,14 @@
       </action>
     </keybind>
     <keybind key="A-Tab">
-      <action name="NextWindow"/>
+      <action name="NextWindow">
+        <raise>yes</raise>
+      </action>
     </keybind>
     <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
+      <action name="PreviousWindow">
+        <raise>yes</raise>
+      </action>
     </keybind>
     <keybind key="C-A-Tab">
       <action name="NextWindow">
@@ -434,6 +437,16 @@
         <y>0</y>
         <width>50%</width>
         <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Tab">
+      <action name="NextWindow">
+        <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="W-S-Tab">
+      <action name="PreviousWindow">
+        <raise>yes</raise>
       </action>
     </keybind>
   </keyboard>
