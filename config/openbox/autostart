@@ -1,7 +1,8 @@
 # APPS
-# ----
 
-nitrogen --set-auto --random &
+nitrogen --restore
+# for use with K2SO Quotes desktop wallpaper series
+#nitrogen --set-auto --random &
 volti &
 compton &
 tint2 &
@@ -12,7 +13,6 @@ numlockx &
 docky &
 
 # KEYBOARD
-# --------
 
 # set caps-lock as the compose key to type umlauts and such
 setxkbmap -option compose:caps
@@ -20,8 +20,15 @@ setxkbmap -option compose:caps
 # change the $ key on my US Layout to a Euro-Moneydollars key
 xmodmap -e "keycode  13 = 4 EuroSign 4 EuroSign"
 
+# APPLE KEYBOARD STUFF
+
+# us keyboard layout
+setxkbmap -device 12 us
+
+# compose key
+setxkbmap -device 12 -option compose:caps
+
 # SYSTEM / SCREEN
-# ---------------
 
 # turn off system error beep
 xset -b 
